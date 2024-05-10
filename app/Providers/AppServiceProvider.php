@@ -2,10 +2,8 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use App\Repository\Interface\IUserRepository;
 use App\Repository\UserRepository;
-
 
 
 class AppServiceProvider extends ServiceProvider

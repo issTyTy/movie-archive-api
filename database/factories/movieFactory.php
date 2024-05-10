@@ -25,6 +25,12 @@ class movieFactory extends Factory
             'director'=>fake()->sentence(1),
             'duraction'=>fake()->randomNumber(1),
             'rate'=>fake()->sentence(1),
+            'name'=>fake()->sentence(5),
+            'production'=>fake()->sentence(5),
+            'geners_id'=> \App\Models\Geners::factory(),
+            'director'=>fake()->sentence(5),
+            'duraction'=>fake()->randomNumber(5),
+            'rate'=>fake()->sentence(5),
             'cover'=>fake()->image(),
             'video'=>fake()->image(),
         ];

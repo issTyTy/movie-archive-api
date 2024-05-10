@@ -11,4 +11,5 @@ class Comment extends Model
     protected $table = 'comment';
     protected $fillable = ['name', 'movie_id'];
     public $timestamps = false; // Disable timestamps
+
 }

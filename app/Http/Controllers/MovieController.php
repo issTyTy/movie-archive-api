@@ -18,7 +18,7 @@ class MovieController extends Controller
     public function __construct()
     {
         $this->middleware('auth:api');
-        
+
     }
 
     public function store(Request $request)
@@ -29,10 +29,10 @@ class MovieController extends Controller
         'geners_id' => 'required|integer',
         'director' => 'nullable|string',
         'rate' => 'nullable|string',
-        'cover' => 'nullable|file|image', 
-        'video' => 'nullable|file|image', 
-        'duration' => 'nullable|integer', 
-  ]); 
+        'cover' => 'nullable|file|image',
+        'video' => 'nullable|file|image',
+        'duration' => 'nullable|integer',
+  ]);
 
     $Movie = Movie::create($data);
 
@@ -63,9 +63,9 @@ public function update(Request $request, $id)
         'geners_id' => 'required|integer',
         'director' => 'nullable|string',
         'rate' => 'nullable|string',
-        'cover' => 'nullable|file|image', 
-        'video' => 'nullable|file|image', 
-        'duration' => 'nullable|integer', 
+        'cover' => 'nullable|file|image',
+        'video' => 'nullable|file|image',
+        'duration' => 'nullable|integer',
     ]);
 
     $Movie->update($data);

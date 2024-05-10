@@ -7,14 +7,14 @@ use App\Models\Comment;
 
 class CommentController extends Controller
 {
-    
+
     public function store(Request $request)
 {
     $data = $request->validate([
         'comment' => 'required|string',
         'movie_id' => 'required|integer'
 
-  ]); 
+]);
 
     $Comment = Comment::create($data);
 
@@ -59,3 +59,4 @@ public function delete($id)
 
 
 }
+

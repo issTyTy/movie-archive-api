@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use app\Models\gener;
+use app\Models\Gener;
 
 class genersseeder extends Seeder
 {
@@ -13,7 +13,8 @@ class genersseeder extends Seeder
      */
     public function run(): void
     {
-        Gener::factory(1)->create();
+
+        Gener::factory(10)->create();
 
     }
 }

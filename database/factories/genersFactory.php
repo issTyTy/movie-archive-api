@@ -18,7 +18,7 @@ class genersFactory extends Factory
     {
         return [
             'name'=>fake()->sentence(1),
-        
+            'name'=>fake()->sentence(5),
         ];
     }
 }

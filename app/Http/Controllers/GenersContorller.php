@@ -7,12 +7,12 @@ use App\Models\Geners;
 
 class GenersController extends Controller
 {
-    
+
     public function store(Request $request)
 {
     $data = $request->validate([
         'name' => 'required|string'
-  ]);
+]);
 
     $Geners = Geners::create($data);
 

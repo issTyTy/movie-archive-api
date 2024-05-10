@@ -18,6 +18,7 @@ class commentFactory extends Factory
     {
         return [
             'comment'=>fake()->sentence(1),
+            'comment'=>fake()->sentence(30),
             'movie_id'=>\app\Models\Movie::factory(),
         ];
     }
